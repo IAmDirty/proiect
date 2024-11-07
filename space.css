@@ -1,6 +1,9 @@
 body {
     font-family:'Courier New', Courier, monospace;
     text-align: center;
+    color: white;
+    background-image: linear-gradient(black, white);
+    background-image: url("bg.png");
 }
 
 #board {
