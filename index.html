@@ -2,14 +2,19 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0"> <!--Setează lățimea paginii să se adapteze ecranului dispozitivului.-->
         <title>Space Invaders</title>
-        <link rel="stylesheet" href="space.css">
-        <script src="space.js"></script>
+        <link rel="stylesheet" href="space.css"> <!--Include fișierul space.css pentru a aplica stiluri (culori, fonturi, poziționare) în pagină.-->
+        <script src="space.js"></script> <!--Leagă fișierul JavaScript la HTML.-->
     </head> 
 
     <body>
         <h1>Space Invaders</h1>
-        <canvas id="board"></canvas>
+        <canvas id="board"></canvas> 
+        <div id="bottom-right-text">Ivan Luca, Mangra Raul, Farcanea Roxana, Janus Emese</div>
+        <div id="pauseMessage" style="display: none; color: white; font-size: 32px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"> Game Paused </div> <!--Mesajul "Game Paused" -->
+        <div id="pauseText">Press "P" to pause the game </div> <!-- Afișează textul-->
+        <button id="backToMenuButton" onclick="goBackToMenu()">Back to Menu </button> <!-- Afișează butonul care permite jucătorului să se întoarcă la meniul principal -->
+
     </body>
 </html>

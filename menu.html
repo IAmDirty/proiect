@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Setează lățimea paginii să se adapteze ecranului dispozitivului.-->
+  <title>Space Invaders Menu</title>
+  <link rel="stylesheet" href="menu.css"> <!--Include fișierul menu.css pentru a aplica stiluri (culori, fonturi, poziționare) în pagină.-->
+</head>
+<body>
+
+  <!--Container care conține meniul principal al jocului-->
+  <div id="menu">
+    <h1 class="title">Space Invaders</h1>  
+    <button onclick="startGame()" class="menu-button">Play Game</button>  <!--Butonul care va porni jocul atunci când este apăsat-->
+    <button onclick="showCredits()" class="creditsButton">Credits</button>  <!-- Butonul care va afișa informațiile despre persoanele care au contribuit la crearea jocului .-->
+  </div>
+
+  <!-- Containerul de credite-->
+<div id="creditsContainer" style="display: none;"> <!--Nu va fi vizibil pe pagină până când nu este apăsat butonul "Credits" -->
+    <h2>Credits</h2>
+    <p>Ivan Luca</p>
+    <p>Mangra Raul</p>
+    <p>Fărcanea Roxana-Coralia </p>
+    <p>Janus Emese-Szilvia</p>
+   
+    <button onclick="hideCredits()">Close Credits</button> <!--Închiderea secțiunii "Credits"-->
+</div>
+
+  <script src="menu.js"></script> <!--Leagă fișierul JavaScript la HTML.-->
+</body>
+</html>
